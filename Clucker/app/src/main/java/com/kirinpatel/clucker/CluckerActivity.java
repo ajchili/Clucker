@@ -1,11 +1,15 @@
 package com.kirinpatel.clucker;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
+
+import java.io.File;
 
 public class CluckerActivity extends AppCompatActivity {
 
@@ -16,7 +20,7 @@ public class CluckerActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button cluck = (Button) findViewById(R.id.button_Cluck);
+        ImageButton cluck = (ImageButton) findViewById(R.id.button_Cluck);
         cluck.setOnClickListener(new View.OnClickListener() {
 
             @Override
