@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Clucker</string>
+    <string name="title_activity_clucker">Clucker</string>
+    <string name="button_clucker">Cluck</string>
 </resources>
