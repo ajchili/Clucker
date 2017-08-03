@@ -1,7 +1,6 @@
 package com.kirinpatel.clucker;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -9,7 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import java.io.File;
+import java.util.Random;
 
 public class CluckerActivity extends AppCompatActivity {
 
@@ -25,6 +24,11 @@ public class CluckerActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                int[] media = { R.raw.test };
+                MediaPlayer.create(
+                        getApplicationContext(),
+                        media[new Random().nextInt(media.length)]
+                        ).start();
                 Toast.makeText(getApplicationContext(), "Cluck", Toast.LENGTH_SHORT).show();
             }
         });
