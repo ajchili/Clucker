@@ -24,7 +24,7 @@ public class CluckerActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                int[] media = { R.raw.test };
+                int[] media = { R.raw.cluck_1 };
                 MediaPlayer.create(
                         getApplicationContext(),
                         media[new Random().nextInt(media.length)]
